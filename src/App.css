@@ -1,5 +1,11 @@
 #root {
+  height: 100vh;
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  min-height: 100%;
+  background-image: url('/img/desktop/image-header.jpg'); 
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
 }

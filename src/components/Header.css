@@ -1,13 +1,11 @@
 .main_container {
-    border: 1px solid black;
-    height: 500px;
-    background-color: #3DBEFF;
+    /* border: 1px solid black; */
     color: #fff;
     font-family: 'Barlow', sans-serif;
 }
 
+/* Navbar */
 nav {
-    border: 1px solid red;
     width: 100%;
 }
 
@@ -31,4 +29,21 @@ a {
 .btn:hover {
     color: #fff;
     background-color: rgba(255, 255, 255, 25%);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Bottom of the Header */
+.sub_container > h1 {
+    /* border: 1px solid red; */
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+
+    margin-top: 180px;
+    margin-bottom: 200px;
 }

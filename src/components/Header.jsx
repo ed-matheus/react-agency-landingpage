@@ -4,7 +4,8 @@ const Header = () => {
     return (
         <>
             <div className="main_container">
-                <nav className="navbar navbar-expand-lg px-4 py-3">
+                {/* Navbar */}
+                <nav className="navbar navbar-expand-lg px-4 py-4">
                     <div className="container-fluid d-flex align-items-center ">
                         <a class="navbar-brand" href="#">
                             <img src="/img/logo.svg" alt="sunnyside logo" />
@@ -33,6 +34,14 @@ const Header = () => {
                         </div>
                     </div>
                 </nav>
+                {/* Navbar ends */}
+
+                {/* Title and Image */}
+                <div className="sub_container">
+                    <h1>we are creatives</h1>
+                    <img src="/img/icon-arrow-down.svg" alt="arrow down" />
+                </div>
+                {/* Title and Image ends*/}
             </div>
         </>
     )
