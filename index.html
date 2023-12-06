@@ -1,68 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  About
-  Services
-  Projects
-  Contact
+    <!-- CSS File -->
+    <link rel="stylesheet" href="assets/styles.css" />
 
-  We are creatives
+    <!-- JS File -->
+    <script src="assets/script.js" defer></script>
 
-  Transform your brand
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+  </head>
 
-  Learn more
+  <body>
+    <header>
+      <nav
+        class="nav-bar px-4 d-flex justify-content-between align-items-center"
+      >
+        <div class="logo d-flex align-item-center">
+          <a href="#">
+            <img src="assets/images/logo.svg" alt="sunnyside logo" />
+          </a>
+        </div>
 
-  Stand out to the right audience
+        <!-- DESKTOP MENU -->
+        <div class="nav-list d-flex align-items-center">
+          <ul class="navbar-nav d-flex flex-row align-items-center text-light">
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+          </ul>
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+          <button class="contact-button">
+            <a class="nav-link" href="#">contact</a>
+          </button>
+        </div>
+        <!-- DESKTOP MENU ENDS -->
 
-  Learn more
+        <!-- MOBILE MENU ICON (HAMBURGER) -->
+        <div class="mobile-menu-icon">
+          <button onclick="showMenu()">
+            <img src="assets/images/icon-hamburger.svg" alt="hamburger icon" />
+          </button>
+        </div>
+        <!-- MOBILE MENU ICON (HAMBURGER) ENDS -->
+      </nav>
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+      <div class="header-content mt-5">
+        <h1>we are creatives</h1>
+        <img src="assets/images/icon-arrow-down.svg" alt="arrow down" />
+      </div>
 
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu">
+        <ul class="navbar-nav align-items-center text-light">
+          <li class="nav-item me-4"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+        </ul>
 
-  Client testimonials
+        <button class="contact-button">
+          <a class="nav-link" href="#">contact</a>
+        </button>
+      </div>
+      <!-- MOBILE MENU ENDS -->
+    </header>
 
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
+    <!-- CARDS AND CONTENT -->
+    <div class="cards_container">
+      <div class="section w-100 text-center d-flex flex-column">
+        <!-- PICTURE -->
+        <div class="picture-container">
+          <img
+            class="w-100"
+            src="/assets/images/mobile/image-transform.jpg"
+            alt="egg image"
+          />
+        </div>
 
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
+        <!-- CARD -->
+        <div class="content-card">
+          <div class="content w-100">
+            <h1>Transform your brand</h1>
+            <p class="w-100 mt-4 mb-4">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <span><a href="#">learn more</a></span>
+          </div>
+        </div>
+      </div>
 
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
+      <div class="section w-100 text-center d-flex flex-column">
+        <!-- PICTURE -->
+        <div class="picture-container">
+          <img
+            class="w-100"
+            src="/assets/images/mobile/image-stand-out.jpg"
+            alt="egg image"
+          />
+        </div>
 
-  About
-  Services
-  Projects
-  Contact
+        <!-- CARD -->
+        <div class="content-card">
+          <div class="content w-100">
+            <h1>Stand out to the right audience</h1>
+            <p class="w-100 mt-4 mb-4">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <span><a href="#">learn more</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CARDS AND CONTENT ENDS -->
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+      Frontend Mentor</a>. Coded by <a href="#">Ed Matheus</a>.
+    </div> -->
+  </body>
 </html>

@@ -1,0 +1,154 @@
+/* importing font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body {
+    height: 100vh;
+}
+
+/* HEADER */
+header {
+    /* border: 1px solid red; */
+    background-color: #3DBEFF; 
+    background: url(./images/mobile/image-header.jpg) no-repeat top;
+    background-size: 100%;
+    min-height: 538px;
+    width: 100%;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* DESKTOP MENU */
+.nav-bar {
+    padding: 1rem 6rem;
+}
+
+.contact-button {
+    border-radius: 25px;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-size: 0.8rem;
+    padding: 10px 25px;
+    background-color: #fff;
+}
+
+.contact-button:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 30%);
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
+}
+
+.header-content img {
+    margin-top: 70px;
+}
+
+/* CARDS AND PICTURES */
+.cards_container h1, .cards_container span a {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+}
+
+.cards_container p {
+    font-family: 'Barlow', sans-serif;
+    color: hsl(232, 10%, 55%);
+}
+
+.cards_container span {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.cards_container span a {
+    text-decoration: none;
+    border-bottom: 8px solid hsl(51, 100%, 49%);
+    border-radius: 20px;
+}
+
+.content {
+    padding: 3rem 1.5rem;
+}
+
+/* MOBILE MENU */
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* @media screen and (max-width: 425px) {
+    
+} */
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .contact-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        border: none;
+        background: none;
+    }
+    .mobile-menu {
+        background-color: white;
+        width: 80%;
+    }
+    .mobile-menu ul li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        color: hsl(232, 10%, 55%);
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .contact-button {
+        display: block;
+        padding: 0.8rem 1.5rem;
+        background-color: hsl(51, 100%, 49%);
+    }
+    .open {
+        display: block;
+    }
+}
+
+/* FOOTER */
+.attribution { 
+    font-size: 0.8rem; 
+    text-align: center; 
+}
+
+.attribution a { 
+    font-size: 0.8rem; 
+    color: hsl(228, 45%, 44%); 
+}
