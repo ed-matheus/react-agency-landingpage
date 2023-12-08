@@ -61,6 +61,9 @@ header {
 }
 
 /* CARDS AND PICTURES */
+p {
+    font-family: 'Barlow', sans-serif;
+}
 .cards_container h1, .cards_container span a {
     font-family: 'Fraunces', serif;
     font-weight: 900;
@@ -68,23 +71,124 @@ header {
 }
 
 .cards_container p {
-    font-family: 'Barlow', sans-serif;
     color: hsl(232, 10%, 55%);
 }
 
 .cards_container span {
     text-transform: uppercase;
-    font-size: 0.8rem;
 }
 
-.cards_container span a {
+.cards_container span .egg-link, .cards_container span .cup-link {
     text-decoration: none;
-    border-bottom: 8px solid hsl(51, 100%, 49%);
-    border-radius: 20px;
+    position: relative;
+    font-size: 1rem;
+}
+
+.cards_container span .egg-link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 10px solid rgba(250, 212, 0, 0.2); 
+    border-radius: 10px; 
+    position: absolute;
+    right: 0px;
+    bottom: -1px;
+    z-index: -1;
+}
+
+.cards_container span .cup-link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 10px solid rgba(254, 120, 103, 0.2);
+    border-radius: 10px; 
+    position: absolute;
+    right: 0px;
+    bottom: -1px;
+    z-index: -1;
 }
 
 .content {
     padding: 3rem 1.5rem;
+}
+
+.picture-section {
+    position: relative;
+    display: inline-block;
+}
+
+.picture-section .content {
+    position: absolute;
+    bottom: 0;
+}
+
+.picture-section h1 {
+    color: hsl(167, 40%, 24%);
+    font-weight: 900;
+}
+
+.picture-section p {
+    color: hsl(167, 40%, 24%);
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+/* CLIENT TESTIMONIALS */
+.testimonials-container {
+    padding: 3rem 1.5rem;
+}
+
+.testimonials-container h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: hsl(210, 4%, 67%);
+}
+
+.testimonials-container p {
+    color: hsl(213, 9%, 39%);
+}
+
+.client-avatar {
+    border-radius: 100%;
+    width: 75px;
+    overflow: hidden;
+}
+
+.client-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+}
+
+.client-job {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.8rem;
+    color: hsl(210, 4%, 67%);
+}
+
+/* FOOTER */
+.footer {
+    background-color: #90D4C5;
+}
+
+.footer .sunnyside-logo {
+    margin-bottom: 30px;
+    width: 190px;
+}
+
+
+
+.footer ul {
+    margin-bottom: 60px;
+}
+
+.footer ul li {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 900;
+    color: hsl(167, 40%, 24%);
 }
 
 /* MOBILE MENU */
@@ -96,6 +200,7 @@ header {
     display: none;
 }
 
+/* MEDIA QUERIES */
 /* @media screen and (max-width: 425px) {
     
 } */
