@@ -99,6 +99,10 @@ p {
     z-index: -1;
 }
 
+.cards_container span .egg-link:hover::after {
+    border-bottom: 10px solid rgba(250, 212, 0); 
+}
+
 .cards_container span .cup-link::after {
     content: '';
     display: block;
@@ -109,6 +113,10 @@ p {
     right: -8px;
     bottom: -1px;
     z-index: -1;
+}
+
+.cards_container span .cup-link:hover::after {
+    border-bottom: 10px solid rgba(254, 120, 103);
 }
 
 .content {
