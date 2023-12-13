@@ -431,7 +431,8 @@ p {
     }
 
     .clients-container .client p {
-        font-size: 0.5rem;
+        width: 80%;
+        font-size: 0.6rem;
     }
 
     .client-avatar {
@@ -469,9 +470,126 @@ p {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 760px) {
     header {
-        border: 1px solid red;
+        background: url(./images/desktop/image-header.jpg) no-repeat top;
+        background-size: 100%;
+        min-height: 420px;
+        width: 100%;
+        font-family: 'Barlow', sans-serif;
+    }
+    
+    .header-content h1 {
+        font-size: 2rem;
+        margin-top: 60px;
+    }
+
+    .header-content img {
+        margin-top: 45px;
+        width: 30px;
+    }
+
+    /* Changing the sections orientation */
+    .content-card {
+        text-align: start;
+        width: 50%;
+        padding: 0px 25px;
+    }
+
+    .picture-container {
+        width: 50%;
+    }
+
+    .content-card .content h1 {
+        font-size: 1.5rem;
+        margin-bottom: -5px;
+    }
+
+    .content-card .content p {
+        font-size: 0.6rem;
+    }
+
+    .content-card .content span a {
+        font-size: 0.7rem;
+    }
+
+    .section-2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cards_container span .egg-link::after {
+        content: '';
+        display: block;
+        width: 108px;
+        border-bottom: 10px solid rgba(250, 212, 0, 0.2); 
+        border-radius: 10px; 
+        position: absolute;
+        right: -8px;
+        bottom: -1px;
+        z-index: -1;
+    }
+
+    .cards_container span .cup-link::after {
+        content: '';
+        display: block;
+        width: 108px;
+        border-bottom: 10px solid rgba(254, 120, 103, 0.2);
+        border-radius: 10px; 
+        position: absolute;
+        right: -8px;
+        bottom: -1px;
+        z-index: -1;
+    }
+
+    .picture-section {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .picture-section .content {
+        position: absolute;
+        bottom: -60px;
+    }
+
+    .picture-section .content h1 {
+        font-size: 1rem;
+        margin-bottom: -10px;
+    }
+
+    .picture-section .content p {
+        font-size: 0.7rem;
+    }
+
+    /* Testimonials Desktop Orientation */
+    .clients-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .clients-container .client {
+        margin-bottom: 53px;
+    }
+
+    .clients-container .client p {
+        font-size: 0.5rem;
+    }
+
+    .client-avatar {
+        width: 55px;
+    }
+
+    .client-name {
+        font-size: 0.7rem;
+    }
+
+    .client-job {
+        font-size: 0.6rem;
+    }
+}
+
+@media (min-width: 900px) {
+    header {
         background: url(./images/desktop/image-header.jpg) no-repeat top;
         background-size: 100%;
         min-height: 500px;
@@ -480,13 +598,222 @@ p {
     }
     
     .header-content h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
         margin-top: 60px;
     }
 
     .header-content img {
         margin-top: 45px;
         width: 30px;
+    }
+
+    /* Changing the sections orientation */
+    .content-card {
+        text-align: start;
+        width: 50%;
+        padding: 0px 30px;
+    }
+
+    .picture-container {
+        width: 50%;
+    }
+
+    .content-card .content h1 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .content-card .content p {
+        font-size: 0.8rem;
+    }
+
+    .content-card .content span a {
+        font-size: 0.8rem;
+    }
+
+    .section-2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cards_container span .egg-link::after {
+        content: '';
+        display: block;
+        width: 118px;
+        border-bottom: 10px solid rgba(250, 212, 0, 0.2); 
+        border-radius: 10px; 
+        position: absolute;
+        right: -8px;
+        bottom: -1px;
+        z-index: -1;
+    }
+
+    .cards_container span .cup-link::after {
+        content: '';
+        display: block;
+        width: 118px;
+        border-bottom: 10px solid rgba(254, 120, 103, 0.2);
+        border-radius: 10px; 
+        position: absolute;
+        right: -8px;
+        bottom: -1px;
+        z-index: -1;
+    }
+
+    .picture-section {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .picture-section .content {
+        position: absolute;
+        bottom: -60px;
+    }
+
+    .picture-section .content h1 {
+        font-size: 1.2rem;
+        margin-bottom: -10px;
+    }
+
+    .picture-section .content p {
+        font-size: 0.8rem;
+    }
+
+    /* Testimonials Desktop Orientation */
+    .clients-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .clients-container .client {
+        margin-bottom: 53px;
+    }
+
+    .clients-container .client p {
+        font-size: 0.6rem;
+    }
+
+    .client-avatar {
+        width: 55px;
+    }
+
+    .client-name {
+        font-size: 0.7rem;
+    }
+
+    .client-job {
+        font-size: 0.6rem;
+    }
+}
+
+@media (min-width: 1110px) {
+    header {
+        background: url(./images/desktop/image-header.jpg) no-repeat top;
+        background-size: 100%;
+        min-height: 617px;
+        width: 100%;
+        font-family: 'Barlow', sans-serif;
+    }
+    
+    .header-content h1 {
+        font-size: 2.5rem;
+        margin-top: 60px;
+    }
+
+    .header-content img {
+        margin-top: 45px;
+        width: 30px;
+    }
+
+    /* Changing the sections orientation */
+    .content-card {
+        text-align: start;
+        width: 50%;
+        padding: 0px 30px;
+    }
+
+    .picture-container {
+        width: 50%;
+    }
+
+    .content-card .content h1 {
+        font-size: 2.3rem;
+        margin-bottom: 30px;
+    }
+
+    .content-card .content p {
+        font-size: 0.8rem;
+    }
+
+    .content-card .content span a {
+        font-size: 0.8rem;
+    }
+
+    .section-2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .picture-section .content h1 {
+        font-size: 1.4rem;
+        margin-bottom: -10px;
+    }
+
+    .picture-section .content p {
+        font-size: 0.9rem;
+    }
+
+    /* Testimonials Desktop Orientation */
+    .clients-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .clients-container .client {
+        margin-bottom: 53px;
+    }
+
+    .clients-container .client p {
+        font-size: 0.6rem;
+    }
+
+    .client-avatar {
+        width: 55px;
+    }
+
+    .client-name {
+        font-size: 0.8rem;
+    }
+
+    .client-job {
+        font-size: 0.7rem;
+}
+
+@media (min-width: 1350px) {
+    header {
+        background: url(./images/desktop/image-header.jpg) no-repeat top;
+        background-size: 100%;
+        min-height: 740px;
+        width: 100%;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .clients-container .client p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 1500px) {
+    header {
+        background: url(./images/desktop/image-header.jpg) no-repeat top;
+        background-size: 100%;
+        min-height: 820px;
+        width: 100%;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .clients-container .client p {
+        font-size: 0.7rem;
     }
 }
 
